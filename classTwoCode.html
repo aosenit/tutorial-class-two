@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class Two</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(228, 228, 228);
+        width: 100%;
+      }
+
+      section {
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        margin-top: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+      }
+
+      .image {
+        width: 50%;
+        position: relative;
+      }
+
+      .image > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .form {
+        width: 50%;
+      }
+
+      form {
+        padding: 50px 55px 30px 55px;
+        font-family: sans-serif;
+      }
+      form > h1 {
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      form > h5 {
+        font-size: 11px;
+        color: gray;
+      }
+
+      form > h5 > span {
+        color: rgb(212, 229, 254);
+      }
+
+      .firstInputs {
+      }
+
+      .firstInputs > input {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 25px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 900;
+        color: black;
+      }
+
+      .secondInputs > div > input {
+        width: 100%;
+        /* margin-bottom: 10px; */
+        height: 25px;
+        font-size: 10px;
+        color: black;
+      }
+
+      .secondInputs > div > h5 {
+        font-size: 11px;
+        color: gray;
+        line-height: 0;
+      }
+
+      button {
+        background-color: rgb(17, 105, 227);
+        color: white;
+        width: 248px;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        height: 30px;
+        border: none;
+      }
+
+      .checkDiv {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      #checkbox {
+        height: 12px;
+        width: auto;
+        padding-left: 0;
+        margin: 0;
+        margin-right: 10px;
+      }
+
+      h6 {
+        font-size: 7px;
+      }
+
+      h6 > span {
+        color: rgb(212, 229, 254);
+      }
+
+      p {
+        font-size: 6px;
+        padding-top: 20px;
+      }
+    </style>
+
+    <section>
+      <div class="image">
+        <img src="/images/anotherFormImage.jpg" alt="form image" />
+      </div>
+      <div class="form">
+        <form>
+          <h1>Create An Account</h1>
+          <h5>Already have an account? <span>Log In</span></h5>
+
+          <div class="firstInputs">
+            <input type="text" placeholder="Sign up with Google" />
+            <input type="text" placeholder="Sign up with facebook" />
+          </div>
+
+          <hr />
+
+          <div>
+            <div class="secondInputs">
+              <div>
+                <h5>Email Address</h5>
+                <input type="text" placeholder="Enter Email " required />
+              </div>
+
+              <div>
+                <h5>Password</h5>
+                <input type="password" placeholder="Enter Password " />
+              </div>
+
+              <button>Continue</button>
+
+              <div class="checkDiv">
+                <input type="checkbox" name="form check" id="checkbox" />
+                <h6>
+                  I agree to the platforms <span>Terms of Service</span> and
+                  <span>Privacy Policy</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <p>&copy; 2021 All rights reserved</p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
